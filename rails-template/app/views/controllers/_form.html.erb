@@ -1,0 +1,85 @@
+<%= form_for(@controller) do |f| %>
+  <% if @controller.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@controller.errors.count, "error") %> prohibited this controller from being saved:</h2>
+
+      <ul>
+      <% @controller.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :site_id %><br>
+    <%= f.number_field :site_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :installed_on %><br>
+    <%= f.text_field :installed_on %>
+  </div>
+  <div class="field">
+    <%= f.label :communications_enabled %><br>
+    <%= f.check_box :communications_enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :hub_settings %><br>
+    <%= f.text_field :hub_settings %>
+  </div>
+  <div class="field">
+    <%= f.label :ip_address %><br>
+    <%= f.text_field :ip_address %>
+  </div>
+  <div class="field">
+    <%= f.label :communication_type %><br>
+    <%= f.text_field :communication_type %>
+  </div>
+  <div class="field">
+    <%= f.label :communication_address %><br>
+    <%= f.text_field :communication_address %>
+  </div>
+  <div class="field">
+    <%= f.label :controller_type %><br>
+    <%= f.text_field :controller_type %>
+  </div>
+  <div class="field">
+    <%= f.label :share_et_from %><br>
+    <%= f.text_field :share_et_from %>
+  </div>
+  <div class="field">
+    <%= f.label :share_rain_from %><br>
+    <%= f.text_field :share_rain_from %>
+  </div>
+  <div class="field">
+    <%= f.label :rain_polling %><br>
+    <%= f.check_box :rain_polling %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :part_number %><br>
+    <%= f.text_field :part_number %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_number %><br>
+    <%= f.text_field :serial_number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

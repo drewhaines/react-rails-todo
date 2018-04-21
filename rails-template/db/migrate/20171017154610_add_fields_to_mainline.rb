@@ -1,0 +1,50 @@
+class AddFieldsToMainline < ActiveRecord::Migration
+  def change
+    add_column :mainlines, :use_capacity, :boolean
+    add_column :mainlines, :capacity_with_pump, :string
+    add_column :mainlines, :capacity_without_pump, :string
+    add_column :mainlines, :break_during_irrigation, :string
+    add_column :mainlines, :break_during_override, :string
+    add_column :mainlines, :break_all_other_times, :string
+    add_column :mainlines, :compare_flow_rate, :boolean
+    add_column :mainlines, :flow_rate_1_to, :string
+    add_column :mainlines, :flow_rate_1_plus, :string
+    add_column :mainlines, :flow_rate_1_minus, :string
+    add_column :mainlines, :flow_rate_2_to, :string
+    add_column :mainlines, :flow_rate_2_plus, :string
+    add_column :mainlines, :flow_rate_2_minus, :string
+    add_column :mainlines, :flow_rate_3_to, :string
+    add_column :mainlines, :flow_rate_3_plus, :string
+    add_column :mainlines, :flow_rate_3_minus, :string
+    add_column :mainlines, :flow_rate_4_plus, :string
+    add_column :mainlines, :flow_rate_4_minus, :string
+    add_column :mainlines, :sunday_override_open, :boolean
+    add_column :mainlines, :sunday_override_open_time, :string
+    add_column :mainlines, :sunday_override_close, :boolean
+    add_column :mainlines, :sunday_override_close_time, :string
+    add_column :mainlines, :monday_override_open, :boolean
+    add_column :mainlines, :monday_override_open_time, :string
+    add_column :mainlines, :monday_override_close, :boolean
+    add_column :mainlines, :monday_override_close_time, :string
+    add_column :mainlines, :tuesday_override_open, :boolean
+    add_column :mainlines, :tuesday_override_open_time, :string
+    add_column :mainlines, :tuesday_override_close, :boolean
+    add_column :mainlines, :tuesday_override_close_time, :string
+    add_column :mainlines, :wednesday_override_open, :boolean
+    add_column :mainlines, :wednesday_override_open_time, :string
+    add_column :mainlines, :wednesday_override_close, :boolean
+    add_column :mainlines, :wednesday_override_close_time, :string
+    add_column :mainlines, :thursday_override_open, :boolean
+    add_column :mainlines, :thursday_override_open_time, :string
+    add_column :mainlines, :thursday_override_close, :boolean
+    add_column :mainlines, :thursday_override_close_time, :string
+    add_column :mainlines, :friday_override_open, :boolean
+    add_column :mainlines, :friday_override_open_time, :string
+    add_column :mainlines, :friday_override_close, :boolean
+    add_column :mainlines, :friday_override_close_time, :string
+    add_column :mainlines, :saturday_override_open, :boolean
+    add_column :mainlines, :saturday_override_open_time, :string
+    add_column :mainlines, :saturday_override_close, :boolean
+    add_column :mainlines, :saturday_override_close_time, :string
+  end
+end

@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  site_id: 1
+  name: MyString
+  installed_on: MyString
+  communications_enabled: false
+  hub_settings: MyString
+  ip_address: MyString
+  communication_type: MyString
+  communication_address: MyString
+  controller_type: MyString
+  share_et_from: MyString
+  share_rain_from: MyString
+  rain_polling: false
+  latitude: MyString
+  longitude: MyString
+  notes: MyString
+  part_number: MyString
+  serial_number: MyString
+
+two:
+  site_id: 1
+  name: MyString
+  installed_on: MyString
+  communications_enabled: false
+  hub_settings: MyString
+  ip_address: MyString
+  communication_type: MyString
+  communication_address: MyString
+  controller_type: MyString
+  share_et_from: MyString
+  share_rain_from: MyString
+  rain_polling: false
+  latitude: MyString
+  longitude: MyString
+  notes: MyString
+  part_number: MyString
+  serial_number: MyString

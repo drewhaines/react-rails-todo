@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @controller.site_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @controller.name %>
+</p>
+
+<p>
+  <strong>Installed on:</strong>
+  <%= @controller.installed_on %>
+</p>
+
+<p>
+  <strong>Communications enabled:</strong>
+  <%= @controller.communications_enabled %>
+</p>
+
+<p>
+  <strong>Hub settings:</strong>
+  <%= @controller.hub_settings %>
+</p>
+
+<p>
+  <strong>Ip address:</strong>
+  <%= @controller.ip_address %>
+</p>
+
+<p>
+  <strong>Communication type:</strong>
+  <%= @controller.communication_type %>
+</p>
+
+<p>
+  <strong>Communication address:</strong>
+  <%= @controller.communication_address %>
+</p>
+
+<p>
+  <strong>Controller type:</strong>
+  <%= @controller.controller_type %>
+</p>
+
+<p>
+  <strong>Share et from:</strong>
+  <%= @controller.share_et_from %>
+</p>
+
+<p>
+  <strong>Share rain from:</strong>
+  <%= @controller.share_rain_from %>
+</p>
+
+<p>
+  <strong>Rain polling:</strong>
+  <%= @controller.rain_polling %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @controller.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @controller.longitude %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @controller.notes %>
+</p>
+
+<p>
+  <strong>Part number:</strong>
+  <%= @controller.part_number %>
+</p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @controller.serial_number %>
+</p>
+
+<%= link_to 'Edit', edit_controller_path(@controller) %> |
+<%= link_to 'Back', controllers_path %>

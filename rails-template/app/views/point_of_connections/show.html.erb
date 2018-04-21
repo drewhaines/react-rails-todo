@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Poc type:</strong>
+  <%= @point_of_connection.poc_type %>
+</p>
+
+<p>
+  <strong>Mainline:</strong>
+  <%= @point_of_connection.mainline_id %>
+</p>
+
+<p>
+  <strong>Poc used for:</strong>
+  <%= @point_of_connection.poc_used_for %>
+</p>
+
+<p>
+  <strong>Flow meter:</strong>
+  <%= @point_of_connection.flow_meter %>
+</p>
+
+<p>
+  <strong>Master valve:</strong>
+  <%= @point_of_connection.master_valve %>
+</p>
+
+<%= link_to 'Edit', edit_point_of_connection_path(@point_of_connection) %> |
+<%= link_to 'Back', point_of_connections_path %>

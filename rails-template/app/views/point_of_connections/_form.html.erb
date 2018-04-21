@@ -1,0 +1,37 @@
+<%= form_for(@point_of_connection) do |f| %>
+  <% if @point_of_connection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@point_of_connection.errors.count, "error") %> prohibited this point_of_connection from being saved:</h2>
+
+      <ul>
+      <% @point_of_connection.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :poc_type %><br>
+    <%= f.text_field :poc_type %>
+  </div>
+  <div class="field">
+    <%= f.label :mainline_id %><br>
+    <%= f.number_field :mainline_id %>
+  </div>
+  <div class="field">
+    <%= f.label :poc_used_for %><br>
+    <%= f.text_field :poc_used_for %>
+  </div>
+  <div class="field">
+    <%= f.label :flow_meter %><br>
+    <%= f.text_field :flow_meter %>
+  </div>
+  <div class="field">
+    <%= f.label :master_valve %><br>
+    <%= f.text_field :master_valve %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mainline.name %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @mainline.site_id %>
+</p>
+
+<%= link_to 'Edit', edit_mainline_path(@mainline) %> |
+<%= link_to 'Back', mainlines_path %>

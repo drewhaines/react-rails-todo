@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  poc_type: MyString
+  mainline_id: 1
+  poc_used_for: MyString
+  flow_meter: MyString
+  master_valve: MyString
+
+two:
+  poc_type: MyString
+  mainline_id: 1
+  poc_used_for: MyString
+  flow_meter: MyString
+  master_valve: MyString
