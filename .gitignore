@@ -18,4 +18,22 @@
 # Ignore application configuration
 /rails-template/config/application.yml
 
+# dependencies
 /react-template/node_modules/
+
+# testing
+/react-template/coverage
+
+# production
+/react-template/build
+
+# misc
+.DS_Store
+/react-template/.env.local
+/react-template/.env.development.local
+/react-template/.env.test.local
+/react-template/.env.production.local
+
+/react-template/npm-debug.log*
+/react-template/yarn-debug.log*
+/react-template/yarn-error.log*
