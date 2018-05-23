@@ -17,7 +17,7 @@ class ForgotPassword extends React.Component {
             <RequestPasswordResetForm next={() => this.props.history.push('/login')} />
           </div>
         </div>
-        <Link to="/login">
+        <Link to="/login" style={{ textDecoration: 'none' }}>
           <div className='login_link'>Return to Sign in</div>
         </Link>
       </div>

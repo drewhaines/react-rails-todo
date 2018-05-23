@@ -18,6 +18,7 @@ import {signOut} from '../actions/redux-auth/sign-out';
 import {NotificationContainer} from 'react-notifications';
 import {updateDrawerVisibility} from '../actions/Header';
 import Check from 'material-ui/svg-icons/navigation/check';
+import Alarm from 'material-ui/svg-icons/action/alarm';
 
 class Header extends Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class Header extends Component {
               >
                 <ToolbarGroup firstChild={true}>
                   <div className='pointer' onClick={this.handleTouchTap}>
-                    Icon Goes Here
+                    <Alarm style={{width: 35, height: 35, margin: '6px 20px 0px 20px'}} />
                   </div>
                   <ToolbarSeparator
                     style={{marginLeft: 0, height: '100%'}}
@@ -124,7 +125,7 @@ class Header extends Component {
                 containerStyle={{top: 56, backgroundColor: '#262e40', boxShadow: 'none'}}
               >
                 <br/>
-                <Link to="/">
+                <Link to="/" style={{ textDecoration: 'none' }}>
                   <MenuItem
                     id='dashboard_link'
                     className='sidebar_menu'

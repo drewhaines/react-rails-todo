@@ -81,6 +81,7 @@ class EmailSignInForm extends React.Component {
           name='email'
           ref='emailSignInEmail'
           floatingLabelText='Email'
+          floatingLabelStyle={{color: 'black'}}
           disabled={disabled}
           value={this.props.auth.getIn(['emailSignIn', this.getEndpoint(), 'form', 'email'])}
           errors={this.props.auth.getIn(['emailSignIn', this.getEndpoint(), 'errors', 'email'])}
@@ -97,13 +98,14 @@ class EmailSignInForm extends React.Component {
           errors={this.props.auth.getIn(['emailSignIn', this.getEndpoint(), 'errors', 'password'])}
           onChange={this.handleInput.bind(this, 'password')}
           floatingLabelFixed={this.state.autoFilled}
+          floatingLabelStyle={{color: 'black'}}
           underlineFocusStyle={{borderColor: 'white'}}
           {...this.props.inputProps.password} />
 
         <ButtonLoader loading={this.props.auth.getIn(['emailSignIn', 'loading'])}
           type='submit'
           style={{float: 'right', marginTop: 25, textTransform: 'none'}}
-          labelColor='#59AFEA'
+          labelColor='black'
           labelStyle={{textTransform: 'none', fontSize: 18, fontWeight: 300}}
           className='cal_white_button'
           disabled={disabled}

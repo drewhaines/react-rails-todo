@@ -66,6 +66,7 @@ class RequestPasswordResetForm extends React.Component {
         <Input
           type='text'
           floatingLabelText='Email Address'
+          floatingLabelStyle={{color: 'black'}}
           className='request_password_reset_email'
           disabled={loading || inputDisabled}
           value={this.props.auth.getIn(['requestPasswordReset', endpoint, 'form', 'email'])}
@@ -78,7 +79,7 @@ class RequestPasswordResetForm extends React.Component {
           loading={loading}
           type='submit'
           style={{float: 'right', marginTop: 25, textTransform: 'none'}}
-          labelColor='#59AFEA'
+          labelColor='black'
           labelStyle={{textTransform: 'none', fontSize: 18, fontWeight: 300}}
           className='cal_white_button'
           disabled={inputDisabled || submitDisabled}

@@ -14,11 +14,11 @@ class SignIn extends React.Component {
             <EmailSignInForm next={() => this.props.history.push('/')} />
           </div>
         </div>
-        <Link to="/forgot-password">
-          <div className='login_link'>Forgot Password</div>
+        <Link to="/forgot-password" style={{ textDecoration: 'none' }}>
+          <div className='login_link text-center'>Forgot Password</div>
         </Link>
-        <Link to="/sign-up">
-          <div className='login_link'>Sign Up</div>
+        <Link to="/sign-up" style={{ textDecoration: 'none' }}>
+          <div className='login_link text-center'>Sign Up</div>
         </Link>
       </div>
     );

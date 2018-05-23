@@ -68,6 +68,7 @@ class EmailSignUpForm extends React.Component {
             floatingLabelText='First Name'
             className='email-sign-up-first-name'
             disabled={disabled}
+            floatingLabelStyle={{color: 'black'}}
             value={this.props.auth.getIn([
               'emailSignUp',
               this.getEndpoint(),
@@ -85,6 +86,7 @@ class EmailSignUpForm extends React.Component {
             floatingLabelText='Last Name'
             className='email-sign-up-last-name'
             disabled={disabled}
+            floatingLabelStyle={{color: 'black'}}
             value={this.props.auth.getIn([
               'emailSignUp',
               this.getEndpoint(),
@@ -101,6 +103,7 @@ class EmailSignUpForm extends React.Component {
           <Input type='text'
             floatingLabelText='Email'
             className='email-sign-up-email'
+            floatingLabelStyle={{color: 'black'}}
             disabled={disabled}
             value={this.props.auth.getIn(['emailSignUp', this.getEndpoint(), 'form', 'email'])}
             errors={this.props.auth.getIn(['emailSignUp', this.getEndpoint(), 'errors', 'email'])}
@@ -110,6 +113,7 @@ class EmailSignUpForm extends React.Component {
           <Input type='password'
             floatingLabelText='Password'
             className='email-sign-up-password'
+            floatingLabelStyle={{color: 'black'}}
             disabled={disabled}
             value={this.props.auth.getIn(['emailSignUp', this.getEndpoint(), 'form', 'password'])}
             errors={this.props.auth.getIn([
@@ -122,6 +126,7 @@ class EmailSignUpForm extends React.Component {
           <Input type='password'
             floatingLabelText='Password Confirmation'
             className='email-sign-up-password-confirmation'
+            floatingLabelStyle={{color: 'black'}}
             disabled={disabled}
             value={this.props.auth.getIn(['emailSignUp',
               this.getEndpoint(), 'form', 'password_confirmation'])}
@@ -131,12 +136,13 @@ class EmailSignUpForm extends React.Component {
             {...this.props.inputProps.passwordConfirmation} />
 
           <ButtonLoader
-            loading={this.props.auth.getIn(['emailSignUp', this.getEndpoint(), 'loading'])}
+            loading={this.props.auth.getIn(['emailSignUp', 'loading'])}
             type='submit'
-            className='email-sign-up-submit'
-            primary={true}
-            style={{float: 'right'}}
-            icon={ContentSend}
+            style={{float: 'right', marginTop: 25, textTransform: 'none'}}
+            labelColor='white'
+            backgroundColor='#448aff'
+            labelStyle={{textTransform: 'none', fontSize: 18, fontWeight: 300}}
+            className='cal_white_button'
             disabled={disabled}
             onClick={this.handleSubmit.bind(this)}
             {...this.props.inputProps.submit}>

@@ -15,9 +15,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Home from './containers/Home';
 import AcceptInvite from './containers/AcceptInvite';
 import GlobalComponents from './containers/GlobalComponents';
-import SignUp from './containers/redux-auth/EmailSignUpForm';
 // components
 import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
 import AuthenticatedRoute from './components/AuthenticatedRoute';
