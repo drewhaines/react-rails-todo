@@ -31,6 +31,11 @@ import './styles/App.css';
 // define the api endpoint url
 let apiUrl = 'http://localhost:5000';
 
+const font = "'Open Sans', sans-serif";
+const muiTheme = getMuiTheme({
+  fontFamily: font
+});
+
 // create the redux store
 const store = createStore(
   Reducers,
@@ -84,7 +89,7 @@ class App extends Component {
     // once the store is loaded, load the rest of the app
     return (
       <Provider store={store} key="provider" >
-        <MuiThemeProvider>
+        <MuiThemeProvider muiTheme={muiTheme}>
           <div>
             <GlobalComponents />
             <BrowserRouter>

@@ -186,3 +186,12 @@ input:-webkit-autofill {
   position: relative;
   left: 8px;
 }
+
+@font-face {
+  font-family: 'Digital';
+  src: local('Digital'), url(../fonts/Digital.ttf) format('truetype');
+}
+
+.digital {
+  font-family: 'Digital';
+}

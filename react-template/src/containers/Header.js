@@ -65,7 +65,7 @@ class Header extends Component {
                   zIndex: 1000,
                   position: 'fixed',
                   width: '100%',
-                  borderBottom: '1px solid lightgrey'
+                  borderBottom: '1px solid lightgrey',
                 }}
               >
                 <ToolbarGroup firstChild={true}>
